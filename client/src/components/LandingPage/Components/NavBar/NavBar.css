@@ -1,0 +1,139 @@
+.logo{
+    color: #659afe;
+}
+.navbar {
+    margin-top: 24px;
+}
+
+.navbar .flex {
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+
+.navbar h3 {
+    color: var(--primary-color);
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar nav ul li {
+    color:#969BA5;
+    font-size:16px;
+    position: relative;
+    padding: 0 24px;
+}
+
+.navbar button {
+    padding: 0.7rem 2rem;
+    border-radius: 15px;
+    background-color: #2190FF;
+    color: var(--light-color);
+    border: 1px solid transparent;
+    cursor: pointer;
+    /* position: absolute; */
+}
+
+.hidden {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mobile-nav .flex {
+    gap: 10px;
+    flex-direction: row;
+}
+
+.navbar .change {
+    opacity: 100;
+    top: 80px;
+}
+
+.navbar span {
+    font-size: 24px;
+}
+
+.navbar nav ul a:hover {
+    color: var(--primary-color);
+}
+
+.navbar nav ul li:after {
+    content: "";
+    position: absolute;
+    background-color: #2190FF;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+.navbar nav ul li:hover:after {
+    width: 100%;
+}
+
+@media screen and (max-width:980px) {
+    .navbar {
+        text-align: center;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mobile-nav .flex {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .navbar nav .flex {
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .navbar button {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:680px) {
+    .navbar nav {
+        display: none;
+    }
+
+    .navbar nav.change {
+        display: block;
+    }
+
+    .navbar nav .flex {
+        flex-direction: column;
+        background-color: transparent;
+        padding: 0px;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .mobile-nav {
+        width: 100%;
+    }
+
+    .mobile-nav h3 {
+        display: none;
+    }
+}
