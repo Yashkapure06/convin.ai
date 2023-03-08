@@ -55,7 +55,7 @@ const SignUp = () => {
 
     setIsLoading(true);
     // API Call
-    const response = await fetch("http://localhost:8181/api/auth/register", {
+    const response = await fetch("https://convin-ai.onrender.com/api/auth/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

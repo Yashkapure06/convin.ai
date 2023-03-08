@@ -6,9 +6,9 @@ export const NotesProvider = ({ children }) => {
     const [notes, setNotes] = useState([]);
 
     const getNotes = async (search) => {
-        let URI = 'http://localhost:8181/api/notes/getallnotes';
+        let URI = 'https://convin-ai.onrender.com/api/notes/getallnotes';
         if (search) {
-            URI = `http://localhost:8181/api/notes/search/${search}`;
+            URI = `https://convin-ai.onrender.com/api/notes/search/${search}`;
         }
         try {
             const response = await fetch(URI, {
@@ -30,7 +30,7 @@ export const NotesProvider = ({ children }) => {
 
     const getNote = async (note) => {
         const response = await fetch(
-            `http://localhost:8181/api/notes/getnote/${note._id}`,
+            `https://convin-ai.onrender.com/api/notes/getnote/${note._id}`,
             {
                 method: 'GET',
                 headers: {
@@ -44,7 +44,7 @@ export const NotesProvider = ({ children }) => {
     };
 
     const addNewNote = async (note) => {
-        const result = await fetch(`http://localhost:8181/api/notes/addnote`, {
+        const result = await fetch(`https://convin-ai.onrender.com/api/notes/addnote`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -58,7 +58,7 @@ export const NotesProvider = ({ children }) => {
 
     const updateExistingNote = async (note) => {
         const response = await fetch(
-            `http://localhost:8181/api/notes/updatenote/${note._id}`,
+            `https://convin-ai.onrender.com/api/notes/updatenote/${note._id}`,
             {
                 method: 'PUT',
                 headers: {
@@ -79,7 +79,7 @@ export const NotesProvider = ({ children }) => {
 
     const deleteNote = async (note) => {
         const response = await fetch(
-            `http://localhost:8181/api/notes/deletenote/${note._id}`,
+            `https://convin-ai.onrender.com/api/notes/deletenote/${note._id}`,
             {
                 method: 'DELETE',
                 headers: {

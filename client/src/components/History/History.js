@@ -14,7 +14,7 @@ const History = () => {
 
     const getDeletedNotes = async (authtoken) => {
         setProgress(20);
-        const response = await fetch('http://localhost:8181/api/notes/bin', {
+        const response = await fetch('https://convin-ai.onrender.com/api/notes/bin', {
 
             method: 'GET',
             headers: {
@@ -57,7 +57,7 @@ const History = () => {
 
   const unArchive = async (id) => {
     const authtoken = sessionStorage.getItem('auth-token');
-    const response = await fetch(`http://localhost:8181/api/notes/unarchive/${id}`, {
+    const response = await fetch(`https://convin-ai.onrender.com/api/notes/unarchive/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ const History = () => {
   const deletePermanently = async (id) => {
     if (window.confirm('Are You sure you want to delete this Note Permanently?')) {
       const authtoken = sessionStorage.getItem('auth-token');
-      const response = await fetch(`http://localhost:8181/api/notes/deletenotepermanently/${id}`, {
+      const response = await fetch(`https://convin-ai.onrender.com/api/notes/deletenotepermanently/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
