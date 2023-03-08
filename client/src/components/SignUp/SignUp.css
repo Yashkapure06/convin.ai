@@ -1,0 +1,60 @@
+@media screen and (min-width: 768px) {
+    :root {
+        --big-font-size: 2.5rem;
+        --normal-font-size: 1rem;
+    }
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    color: var(--first-color);
+}
+.form img {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.hero-circle4 {
+    background-color: transparent;
+    position: absolute;
+    top:7%;
+    left:7%;
+    right: 0;
+    width: 50%;
+    height: 50%;
+}
+.hero-circle5 {
+    background-color: transparent;
+    position: absolute;
+    top:12%;
+    left:9.5%;
+    right: 0;
+    width: 45%;
+    height: 45%;
+}
+.hero-circle4  svg{
+    -webkit-animation: spin 30s linear infinite;
+    background-color: transparent;  
+}
+.hero-circle5 svg{
+    -webkit-animation: spin 25s linear infinite;
+    background-color: transparent;  
+}
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+} 
