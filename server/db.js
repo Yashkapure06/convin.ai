@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongoURI =  "mongodb://localhost:27017/convin"
+const mongoURI =  "mongodb+srv://memories-project:memoriesproject123@cluster0.ryutq.mongodb.net/convin?authSource=admin&replicaSet=atlas-svczjj-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true"
 
 const connectToMongo = async (retryCount) => {
     const MAX_RETRIES = 3;
