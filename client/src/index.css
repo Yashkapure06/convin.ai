@@ -1,0 +1,43 @@
+
+html {
+    scroll-behavior: smooth;
+}
+*{
+    color:#ffffff;
+}
+/*     background: linear-gradient(90deg,#4ca5ff 2.34%,#b673f8 100.78%); */
+#light {
+    background: var(--sidebar-color);
+}
+
+#dark {
+    background: rgb(29, 28, 28);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+#root,
+.app,
+.content {
+  height: 100%;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.app {
+  display: flex;
+  position: relative;
+}
