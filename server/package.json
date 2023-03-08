@@ -1,23 +1,15 @@
 {
-  "name": "online-interview-assessment-server",
+  "name": "convin-ai-server",
   "version": "1.0.0",
-  "description": "You Best secure Interview Assessment",
+  "description": "You Best secure notes keeping",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Yashkapure06/Online-Interview-Assessment.git"
-  },
   "author": "Yash Kapure",
-  "license": "MET",
-  "bugs": {
-    "url": "https://github.com/Yashkapure06/Online-Interview-Assessment/issues"
-  },
-  "homepage": "https://github.com/Yashkapure06/Online-Interview-Assessment/#readme",
-  "dependencies": {
+  "license": "MIT",
+   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
